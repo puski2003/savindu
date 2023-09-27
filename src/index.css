@@ -34,7 +34,7 @@
 }
 
 .violet-gradient {
-  background: #804dee;
+  background: #04181E;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
@@ -42,11 +42,30 @@
     rgba(60, 51, 80, 0) 100%
   );
 }
-
+.line-color{
+  background: #33ffff;
+  background: linear-gradient(-90deg, #33ffff 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #33ffff 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+.product-gradient {
+  background: #003B40;
+  background: linear-gradient(45deg, #003B40 0%, #00656E 100%);
+  background: -webkit-linear-gradient(
+   45deg,
+    #000000 0%, #013535 100%
+  );
+}
+.form-color{
+  background: #011c1f;
+}
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #ffffff 1.9%, #00ffff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #fafafa 1.9%, #00ffff 97.5%);
 }
 
 .orange-text-gradient {
@@ -200,5 +219,29 @@
       0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+  }
+}
+.jumping-scroll {
+  position: relative;
+}
+
+/* Responsive styles for desktop screens */
+@media (min-width: 1024px) {
+  .jumping-scroll {
+    top: 23vh;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% / 2 - 14px); /* Two cards per row with some gap */
+  }
+}
+
+/* For desktop devices */
+@media (min-width: 769px) {
+  .project-card {
+    width: calc(100% / 3 - 14px); /* Three cards per row with some gap */
   }
 }

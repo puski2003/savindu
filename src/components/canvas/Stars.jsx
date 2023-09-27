@@ -30,9 +30,12 @@ const Stars = (props) => {
 };
 
 const StarsCanvas = () => {
+  const canvasStyle = {
+    backgroundColor: "#000A0B" 
+  };
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas camera={{ position: [0, 0, 1] }} style={canvasStyle}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>

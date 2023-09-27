@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="product-gradient rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
@@ -37,7 +37,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
+    <section > 
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
@@ -47,17 +47,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm currently working as a Developer for Frontend and Backend that
-        specialize in A.I. (Artificial Intelligence) and M.L. (Machine
-        Learning).
+        I'm currently working as a freelancer for different companies worldwide <br/>by delivering my creative and outstanding products to uplift their value in digital markets as well as in the social media sector.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={service.id} index={index} {...service} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

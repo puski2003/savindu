@@ -71,7 +71,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75]  p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
@@ -86,10 +86,11 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              
               value={form.name}
               onChange={handleChange}
               placeholder="Name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className=" form-color py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -100,7 +101,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="E-mail Address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="form-color py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -111,13 +112,13 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Comment?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="form-color py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            className="form-color py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
           >
             {loading ? "Sending..." : "Send"}
           </button>

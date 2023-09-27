@@ -1,10 +1,13 @@
 {
   "name": "GCV Web Portfolio",
+  "homepage": "https://puski2003.gihub.io/savindu",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -20,6 +23,7 @@
     "react-parallax-tilt": "^1.7.158",
     "react-router-dom": "^6.14.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "react-window": "^1.8.9",
     "three": "^0.155.0"
   },
   "devDependencies": {
@@ -31,6 +35,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"

@@ -20,7 +20,35 @@ import {
   threejs2,
   vuejs,
   firebase,
+
+  
 } from "../assets";
+
+import ad from "../assets/projects/project-img/ad.png";
+import cey from "../assets/projects/project-img/cey.png";
+import filter from "../assets/projects/project-img/filter.png";
+import ghost from "../assets/projects/project-img/ghost.png";
+import harrypotter from "../assets/projects/project-img/harrypotter.png";
+import idb from "../assets/projects/project-img/idb.png";
+import idb2 from "../assets/projects/project-img/idb2.png";
+import imaginary from "../assets/projects/project-img/imaginary.png";
+import mechanical from "../assets/projects/project-img/mechanical.png";
+import painting from "../assets/projects/project-img/paintings.png";
+import pol from "../assets/projects/project-img/pol.png";
+import siwsadaru from "../assets/projects/project-img/siwsadaru.png";
+import thumbnail from "../assets/projects/project-img/thumbnail.png";
+import wallanimation from "../assets/projects/project-img/wallanimation.png";
+
+import amora from "../assets/projects/project-img/amora.png";
+//logos
+import dp from "../assets/projects/brand/dp.png";
+import amoraLogo  from "../assets/projects/brand/amora-logo.jpg";
+import imaginaryLogo from "../assets/projects/brand/imaginaryStudios.png";
+import polLog from "../assets/projects/brand/coconutdevelopment.png";
+import ceyLog from "../assets/projects/brand/ceynorlogo.png";
+import idbLogo from "../assets/projects/brand/IDB.png";
+import siwsadaruLogo from "../assets/projects/brand/Bhagya.png";
+
 
 export const navLinks = [
   {
@@ -28,8 +56,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "project-1",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -38,20 +66,21 @@ export const navLinks = [
 ];
 
 const services = [
-  {
-    title: "Web Developer",
+  { id:1,
+    title: "3D/2D Animator",
     icon: web,
   },
-  {
-    title: "Open Source Developer",
+  {id:2,
+    title: "Video Editor",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    id:3,
+    title: "Graphic Artist",
     icon: backend,
   },
-  {
-    title: "AI / Machine Learning Developer",
+  { id:4,
+    title: "Content Creator",
     icon: brain,
   },
 ];
@@ -105,51 +134,39 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Web Developer",
+    title: "3D/2D Animator",
     icon: webdev1,
     iconBg: "#383E56",
-    date: "Aug 2023 - Present",
+    
     points: [
-      "Developing and maintaining web applications using React.js, Vue.js, and Javascript.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Developed an interactive product configurator using Three.js to allow users to customize and visualize products in real-time.",
+      "Proficient in industry-standard animation software such as Autodesk Maya, Blender, and Adobe After Effects.",
+      "Knowledge of 3D modeling and texturing to enhance animation assets and environments while bringing characters and scenes to life through character animation, rigging, and keyframe animation techniques.",
+      "Collaborating with sound designers and composers to synchronize animations with audio elements for a cohesive final product.",
     ],
   },
   {
-    title: "AI / Machine Learning Developer",
+    title: "Video Editor",
     icon: ai1,
     iconBg: "#383E56",
-    date: " Dec 2022 - Present",
+    
     points: [
-      "Utilized Deep Learning frameworks such as TensorFlow or PyTorch to design, train neural networks for image classification, and natural language processing tasks.",
-      "Collaborating with AI / ML developers on developing systems using collaborative filtering and content-based approaches for user experiences",
-      "Performed data cleaning, handling missing values, outliers, and noisy data to ensure high-quality input for machine learning models.",
+      "Proficient in video editing software such as Adobe Premiere Pro and DaVinci Resolve.",
+      "Enhancing video quality through color correction, color grading, and visual effects to achieve a professional and cinematic look.",
+      "Strong understanding of video editing principles, including pacing, storytelling, continuity, and visual aesthetics.",
     ],
   },
   {
-    title: "QA Tester",
+    title: "Graphic Artist",
     company_name: "Express Energy",
     icon: energy1,
     iconBg: "#383E56",
-    date: "Sept 2022 - Nov 2022",
+   
     points: [
-      "Identified, documented, and reported defects using issue tracking tools like Jira including clear and concise reproduction steps and screenshots.",
-      "Collaborated with developers to verify defect fixes and enhancements, ensuring that issues were resolved according to specifications and user requirements.",
-      "Designed and implemented automated test scripts using testing frameworks like Selenium and Appium.",
+      "Proficiency in graphic design software such as Adobe Photoshop, Adobe Illustrator, Adobe InDesign, and other relevant tools.",
+      "Designing logos, branding materials, and corporate identity elements that convey a strong and memorable visual identity.",
+      "Adhering to design best practices, including color theory, composition, and visual hierarchy, to create impactful and balanced designs.",
     ],
-  },
-  {
-    title: "Supervisor Security Guard",
-    company_name: "Securitas",
-    icon: security1,
-    iconBg: "#E6DEDD",
-    date: "May 2020 - Sept 2022",
-    points: [
-      "Supervising the security staff, including new hires, and training.",
-      "Monitoring building access and identified all customers and employees .",
-      "Maintain daily logs of irregularities such as equipment, property damage, or theft.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [
@@ -181,47 +198,225 @@ const testimonials = [
 
 const projects = [
   {
-    name: "ThreeJS",
+    name: "Logo RevealS",
     description:
-      "Employing the versatility of JavaScript in conjunction with the robust capabilities of Three.js, my project demonstrates a sophisticated implementation of interactive 3D graphics.",
-    tags: [
+      "Create a captivating 3D animation logo reveal for Imaginary Studios using Blender, showcasing their creative prowess. Engage viewers in seconds with a stunning visual introduction.",
+
+    brand: [
       {
-        name: "javascript",
-        color: "",
-      },
-      {
-        name: "threejs",
-        color: "green-text-gradient",
-      },
+        name: "Imaginary Studios",
+        image: imaginaryLogo,
+        brandLink:""
+      }
     ],
-    image: threejswp,
-    source_code_link: "https://github.com/gvue003/threejs_portfolio",
+    image: imaginary,
+    source_code_link: "https://youtu.be/YNOhE0H1uow?si=4tOuX-WO_5S4iIhd",
   },
   {
-    name: "Web Developer Portfolio",
+    name: "Video Wall Animation",
     description:
-      "My project seamlessly integrates the dynamic user interface capabilities of React.js with the immersive 3D rendering functionalities of Three.js to create a captivating and interactive web experience.",
-    tags: [
+      " video wall animation highlighting Srilankan Coconut Development Authority's evolution, from traditional roots to cutting-edge innovations, celebrating the coconut industry's heritage and future prospects.",
+
+    brand: [
       {
-        name: "javascript",
-        color: "",
-      },
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "threejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
+        name: "Coconut Development Authority",
+        image: polLog,
+        brandLink:"https://www.cda.gov.lk/"
+      }
     ],
-    image: reactandthreewp,
-    source_code_link: "https://github.com/",
+    image: pol,
+    source_code_link: "https://youtu.be/hrGkn5k1etc?si=Yu0NYQ-O9ffq6A8d",
   },
+  {
+    name: "Aniversary Animation",
+    description:
+      "Develop an immersive video wall animation showcasing the Ministry of Fisheries' partnership with Cey-Nor Foundation in advancing sustainable fisheries practices for a thriving marine ecosystem. ",
+
+    brand: [
+      {
+        name: "Cey-Nor Foundation",
+        image:ceyLog ,
+        brandLink:"https://www.ceynor.gov.lk/"
+      }
+    ],
+    image: cey,
+    source_code_link: "https://youtu.be/Ea9p0EDicxY?si=Lp9yZMDjSJmDRfQo",
+  },
+  
+  {
+    name: " Social Media Teaser",
+    description:
+      "Craft an engaging social media teaser highlighting the Industrial Development Board's transformative role in driving innovation and economic growth, sparking curiosity and excitement among the audience. ",
+    brand: [
+      {
+        name: "Industrial Development Board",
+        image: idbLogo ,
+        brandLink:"https://idb.gov.lk/"
+      },
+      
+    ],
+    image: idb,
+    source_code_link: "https://youtube.com/shorts/fNLi4hNsBmo?si=fZIKD2XUlJuaZsBV",
+  },
+  {
+    name: " Introduction Video",
+    description:
+      "Produce a captivating introduction video for 'SIW SADA ROO', a Bhagya School of Dance production in Australia, spotlighting the mesmerizing beauty of Sri Lankan culture and dance. ",
+    brand: [
+      {
+        name: "Bhagya School of Dance",
+        image: siwsadaruLogo ,
+        brandLink:"https://www.facebook.com/p/Bhagya-School-of-Dance-100086191037323/"
+      },
+      
+    ],
+    image: siwsadaru,
+    source_code_link: "https://youtu.be/4PIE0xefQuk?si=UHFgLosxom0en6Ey",
+  },
+  {
+    name: "Rigid Body Simulation",
+    description:
+      "Produce a captivating introduction video for 'SIW SADA ROO', a Bhagya School of Dance production in Australia, spotlighting the mesmerizing beauty of Sri Lankan culture and dance. ",
+    brand: [
+      {
+        name: "Imaginary Studios",
+        image: imaginaryLogo ,
+        brandLink:""
+      },
+      
+    ],
+    image: harrypotter,
+    source_code_link: "https://www.instagram.com/_imaginary_studios/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+  },
+  {
+    name: "Thumbnail Designs for youtube",
+    description:
+      "DP Education which is a leading youtube channel which lets students worldwide learn coding skills for free and I have made more than 100 thumbnail designs for that channel with almost 120k subscribers.",
+    brand: [
+      {
+        name: "DP Education",
+        image: dp ,
+        brandLink:"https://www.dpeducation.lk/"
+      },
+      
+    ],
+    image: thumbnail,
+    source_code_link: "https://www.youtube.com/@dpeducationitcampus174/featured",
+  },
+  {
+    name: " Product Teaser   ",
+    description:
+      "This is a product showcasing teaser with the paintings that are on sale on their website. This company is a startup that requested a video in order to post these amazing work on social media for further awareness.",
+    brand: [
+      {
+        name: "Amora Artworks  ",
+        image: amoraLogo ,
+        brandLink:"https://www.instagram.com/_amora.lk_/"
+      },
+      
+    ],
+    image:amora,
+    source_code_link: "instagram.com/reel/CvwG9i2BEI9/?igshid=MzRlODBiNWFlZA%3D%3D",
+  },
+  
+ 
+  {
+    name: "3D Product Commercial  ",
+    description:
+      "I collaborated with a forward-thinking startup based in Sri Lanka to create a groundbreaking 3D product design. This project allowed me to showcase my passion for technology and my skills in 3D modeling.",
+    brand: [
+      {
+        name: "Confidential Startup compan  ",
+        image: "" ,
+        brandLink:""
+      },
+      
+    ],
+    image:filter,
+    source_code_link: "https://youtu.be/C6BbAXKAXro?si=KoJQoWW_WqVRyRAY ",
+  },
+  
+  {
+    name: "Smoke Simulation Anime  ",
+    description:
+      " I crafted a stunning smoke simulation that perfectly synced with the rhythm and beats of the song \"Alan Walker - The Spectre\".This project not only showcases my animation skills but also demonstrates my ability to merge art and technology to create immersive experiences ",
+    brand: [
+      {
+        name: "Imaginary Studios",
+        image: imaginaryLogo ,
+        brandLink:"https://instagram.com/_imaginary_studios?igshid=OGQ5ZDc2ODk2ZA"
+      },
+      
+    ],
+    image:ghost,
+    source_code_link: "https://youtube.com/shorts/e9bTLiaa1PQ?si=KCBrEStCAthR5fJI",
+  },
+  {
+    name: "KeyFrame Animation",
+    description:
+      " Explore a mesmerizing world of mechanical wonder as Imaginary Studios brings a robotic masterpiece to life through captivating key frame animation. Witness innovation in motion. ",
+    brand: [
+      {
+        name: "Imaginary Studios",
+        image: imaginaryLogo ,
+        brandLink:"https://instagram.com/_imaginary_studios?igshid=OGQ5ZDc2ODk2ZA"
+      },
+      
+    ],
+    image:mechanical,
+    source_code_link: "https://www.instagram.com/reel/CvgVHxFIkHv/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+  },
+  
+  
+  
+  
+  
+ 
+ 
+
+  
+ 
+];
+const projects2 = [
+  {
+    name: "Logo RevealS",
+    description:
+      "Create a captivating 3D animation logo reveal for Imaginary Studios using Blender, showcasing their creative prowess. Engage viewers in seconds with a stunning visual introduction.",
+
+    brand: [
+      {
+        name: "Imaginary Studios",
+        image: imaginaryLogo,
+        brandLink:""
+      }
+    ],
+    image: imaginary,
+    source_code_link: "https://youtu.be/YNOhE0H1uow?si=4tOuX-WO_5S4iIhd",
+  },
+  
+  {
+    name: "Aniversary Animation",
+    description:
+      "Develop an immersive video wall animation showcasing the Ministry of Fisheries' partnership with Cey-Nor Foundation in advancing sustainable fisheries practices for a thriving marine ecosystem. ",
+
+    brand: [
+      {
+        name: "Cey-Nor Foundation",
+        image:filter ,
+        brandLink:"https://www.ceynor.gov.lk/"
+      }
+    ],
+    image: "",
+    source_code_link: "https://youtu.be/Ea9p0EDicxY?si=Lp9yZMDjSJmDRfQo",
+  },
+
+  
+  
+ 
+ 
+
+  
+ 
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects,projects2 };

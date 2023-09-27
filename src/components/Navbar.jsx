@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import {  menu, close } from "../assets";
+import logo from "../components/logo.png"
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
-    <nav
+    <nav style={{backgroundColor:"#031417"}}
       className={
         "${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary"
       }
@@ -23,9 +24,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Geng &nbsp;
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" style={{marginTop:"-4px"}} />
+          <p className="text-white text-[18px] font-bold cursor-pointer flex ms-2">
+            Savindu  Radaliyagoda
             <span className="sm:block hidden"></span>
           </p>
         </Link>
